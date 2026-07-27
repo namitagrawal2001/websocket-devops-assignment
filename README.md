@@ -92,6 +92,8 @@ websocket-devops-assignment/
 │   └── requirements.txt
 ├── frontend/
 │   └── index.html
+├── docs/
+│   └── architecture.md
 ├── Dockerfile
 ├── docker-compose.yml
 ├── nginx.conf
