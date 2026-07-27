@@ -22,3 +22,14 @@ services:
     image: redis:7-alpine
     container_name: chat-redis
     restart: always
+
+  netdata:
+    image: netdata/netdata:stable
+    container_name: chat-netdata
+    ports:
+      - "19999:19999"
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /etc/os-release:/host/etc/os-release:ro
+    restart: always
